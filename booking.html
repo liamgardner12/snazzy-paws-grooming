@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment | Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="brand-container">
+                <img src="images/dog_logo.jpg" alt="Logo" class="nav-logo">
+                <h1>Snazzy Paws Grooming</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="display: flex; justify-content: center; align-items: center; min-height: 80vh; padding: 40px 20px;">
+        
+        <div class="form-card">
+            <h2 style="margin-top: 0; color: #48a9a6; text-align: center;">Service Booking</h2>
+            <p style="margin-bottom: 25px; text-align: center;">Provide your details below to request an appointment.</p>
+            
+            <form onsubmit="alert('Booking Confirmed! We will be in touch shortly.'); return false;">
+                
+                <label>Owner's Name</label>
+                <input type="text" placeholder="Full Name" required>
+
+                <label>Email Address</label>
+                <input type="email" placeholder="email@example.com" required>
+
+                <label>Dog's Name</label>
+                <input type="text" placeholder="Pet's Name" required>
+
+                <div style="display: flex; gap: 15px;">
+                    <div style="flex: 2;">
+                        <label>Breed</label>
+                        <input type="text" placeholder="e.g. Labradoodle" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label>Age</label>
+                        <input type="number" placeholder="Years" required>
+                    </div>
+                </div>
+
+                <label>Select Service</label>
+                <select required style="background-color: white;">
+                    <option value="">-- Choose a Service --</option>
+                    <option>Bath & Brush ($25-$50)</option>
+                    <option>Full Groom ($65)</option>
+                    <option>Puppy Spa ($40)</option>
+                    <option>Nail Trim ($15)</option>
+                </select>
+
+                <button type="submit">
+                    Submit Booking Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Snazzy Paws Grooming</strong></p>
+        <p>Hours: Monday - Saturday, 9:00 am - 5:00 pm</p>
+        <p>Email: <a href="mailto:booking@snazzypaws.co.nz">booking@snazzypaws.co.nz</a></p>
+    </footer>
+
+</body>
+</html>
