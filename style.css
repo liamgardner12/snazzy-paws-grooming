@@ -1,0 +1,167 @@
+/* BIT607 Assessment 2: Snazzy Paws Grooming */
+
+:root {
+    --primary-mint: #48a9a6;    /* Brand color for headers and buttons */
+    --dark-charcoal: #2d3436;   /* Main text and footer color */
+    --white: #ffffff;           /* Page and card background */
+    --border-light: #e1e1e1;    /* Subtle borders */
+}
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--dark-charcoal);
+    background-color: var(--white); /* Set to default white */
+    text-align: left;
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: var(--primary-mint);
+    padding: 0.5rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 40px;
+    width: auto;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+nav h1 {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Main Layout Centering */
+main {
+    padding: 2rem 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Form Card Styling (Booking & Contact) */
+.form-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--border-light);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Light shadow for depth */
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-mint);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 4x4 Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Ensures images stay square */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+}
+
+/* Table Styling for Services */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 3px solid var(--primary-mint);
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--dark-charcoal);
+    color: var(--white);
+    padding: 2rem 5%;
+    margin-top: 4rem;
+    border-top: 5px solid var(--primary-mint);
+}
+
+footer a {
+    color: var(--primary-mint);
+    text-decoration: none;
+}
